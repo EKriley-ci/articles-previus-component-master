@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1.3em;
+  background-color: hsl(212, 63%, 95%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    position: relative !important;
+  }
+  body main {
+    flex-direction: row !important;
+    max-width: 700px !important;
+    position: inherit !important;
+    overflow: visible !important;
+  }
+  body main img {
+    border-radius: 0.5em 0 0 0.5em !important;
+  }
+  body main .main_content {
+    position: inherit !important;
+    border-radius: 0 0.5em 0.5em 0;
+  }
+  body main .main_content .btn-active {
+    min-width: 100px !important;
+    width: 100% !important;
+    max-width: 200px !important;
+    position: absolute !important;
+    border-radius: 0.7em;
+    max-height: 60px !important;
+    bottom: 4.4em;
+    left: 20em !important;
+    z-index: 10;
+  }
+  body main .main_content .btn-active .links {
+    min-width: 100% !important;
+    position: relative !important;
+  }
+  body main .main_content .btn-active .inside {
+    display: none;
+    position: relative !important;
+  }
+}
+main {
+  width: 100%;
+  max-width: 370px;
+  max-height: 600px;
+  border-radius: 0.5em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main .main_content {
+  background-color: #fff;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+main .main_content b {
+  font-weight: 700;
+}
+main .main_content .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main_content .btn .micihelle {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+main .main_content .btn .micihelle .name-date strong {
+  font-weight: 700;
+}
+main .main_content .btn img {
+  max-width: 40px;
+  border-radius: 50%;
+}
+main .main_content .btn-active {
+  display: none;
+  background-color: hsl(217, 19%, 35%);
+  padding: 1.2em;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  min-width: 100%;
+  left: 0;
+  bottom: 0;
+}
+main .main_content .btn-active p {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsla(210, 46%, 95%, 0.573);
+  font-size: 0.8rem;
+}
+main .main_content .btn-active img {
+  max-width: 20px;
+  max-height: 30px;
+}
+main .main_content .btn-active .links {
+  display: flex;
+  justify-content: space-between;
+  min-width: 60%;
+  align-items: center;
+}
+
+button {
+  padding: 0.6em;
+  line-height: normal;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  justify-self: end;
+}
+button:active {
+  transform: scale(0.97);
+}
+
+.inside {
+  background-color: hsl(214, 17%, 51%);
+}/*# sourceMappingURL=main.css.map */

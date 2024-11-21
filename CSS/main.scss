@@ -1,0 +1,100 @@
+@import 'reset';
+@import 'laptop';
+
+main {
+    width: 100%;
+    max-width: 370px;
+    max-height: 600px;
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .main_content {
+        background-color: #fff;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+
+        b{
+            font-weight: 700;
+        }
+
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .micihelle {
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                .name-date {
+                    strong {
+                        font-weight: 700;
+                    }
+                }
+            }
+            img {
+                max-width: 40px;
+                border-radius: 50%;
+            }
+        }
+        .btn-active {
+         display: none;
+
+         background-color:  hsl(217, 19%, 35%);
+        //  display: flex;
+         padding:  1.2em;
+         justify-content: space-between     ;
+         align-items: center;
+         position: absolute;
+         min-width: 100%;
+         left: 0;
+         bottom: 0;
+         
+         p{
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color:  hsla(210, 46%, 95%, 0.573);
+            font-size: 0.8rem;
+         }
+        img {
+            max-width: 20px;
+            max-height: 30px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+            min-width: 60%;
+            align-items: center;
+
+            
+
+        }
+
+        // button {
+        //     background-color:  hsl(214, 17%, 51%);
+        //     stroke: #fff;
+        // }
+        }
+    }
+}
+
+button {
+    padding: 0.6em;
+    line-height: normal;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    justify-self: end;
+
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+.inside {
+    background-color: hsl(214, 17%, 51%) ;
+}
