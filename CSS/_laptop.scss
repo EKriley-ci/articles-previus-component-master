@@ -2,12 +2,15 @@
     body {
         position: relative  !important;
         main {
+            max-height: 244px !important;
             flex-direction: row !important;
             max-width: 700px !important;
             position: inherit !important;
             overflow:visible !important;
-            img {
+            .img {
                 border-radius:  0.5em 0 0  0.5em !important;
+                max-width: 249px !important;
+                min-height: 244px !important;
             }
             .main_content{
                 position: inherit !important;
